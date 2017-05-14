@@ -1,0 +1,28 @@
+node package manager，是 Node 的模块管理器
+	
+npm help
+	想查看具体命令的用法，可以使用npm 命令 -h
+npm init
+	npm init，提供交互过程，让用户填写相关配置
+	npm init --yes，使用默认值创建package.json
+json文件中
+scripts：可以配置一些命令 利用npm run 命令名称 (可以配置多条)
+	 一个命令 --- start，比较特殊。
+	可以使用npm run start 和 npm start 两种方式来执行
+npm install / npm install -g
+全局安装的位置 npm root -g
+npm install --save 
+npm install --save-dev
+npm uninstall 全局加上 -g 
+npm update  全局加上 -g
+查看当前安装的包
+npm ls本地
+npm ls -g 全局  如果只想查看顶级的安装包。可以加 --depth=0
+npm info 包名
+
+npm config set registry https://registry.npm.taobao.org
+淘宝源的地址
+npm install -g cnpm --registry=https://registry.npm.taobao.org 使用cnpm取代npm
+安装 npm install nrm -g
+使用nrm ls 列出所有可用的npm源
+nrm use 源
